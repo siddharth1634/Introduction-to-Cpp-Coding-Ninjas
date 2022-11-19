@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int n;
+    cin>>n;
+    
+    int rem,num=0;
+    
+    for(int i=1; n!=0; i*=2)
+    {
+        rem = n%10;
+        num += i * rem;
+        n/=10;
+    }
+    cout<<num;
+}
